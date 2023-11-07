@@ -1,32 +1,25 @@
 import React from 'react'
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { ScrollView, StyleSheet, View } from 'react-native'
+import CardDetails from '../Components/CardDetails'
 
 const Images = () => {
     return (
-        <View>
-            <View style={styles.mainPageStyle}>
-                <Text style={styles.textStyle}>Images</Text>
-                <Image style={styles.imageStyle} source={require("../../assets/test1.jpeg")} />
-                {/* <Image style={styles.imageStyle} source={require("../../assets/test2.jpeg")} />
-            <Image style={styles.imageStyle} source={require("../../assets/test3.jpeg")} />
-            <Image style={styles.imageStyle} source={require("../../assets/test4.jpeg")} /> */}
-            </View>
+        <View style={styles.mainview}>
+          <ScrollView >
+          <CardDetails heading="Image1"  imgsrc={require("../../assets/test1.jpeg")}/>
+           <CardDetails heading="Image2" imgsrc={require("../../assets/test3.jpeg")} />
+           <CardDetails heading="Image3" imgsrc={require("../../assets/test4.jpeg")} />
+           <CardDetails heading="Image4" imgsrc={require("../../assets/test2.jpeg")} />
+          </ScrollView>
         </View>
     )
 }
 const styles = StyleSheet.create({
-    mainPageStyle: {
+    mainview:{
+        backgroundColor: "powderblue",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center"
-    },
-    textStyle: {
-        fontSize: 20
-    },
-    imageStyle: {
-        width: 300,
-        height: 300,
-        margin: 5
+        height: 600,
+        overflow: "scroll"
     }
 })
 

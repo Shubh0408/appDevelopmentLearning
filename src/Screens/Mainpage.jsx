@@ -41,21 +41,21 @@ const Mainpage = () => {
     ]
     return (
         <FlatList data={jsonData}
-            keyExtractor={(key)=>{
+            keyExtractor={(key) => {
                 return key.index;
 
             }}
             horizontal={true}
-            showsHorizontalScrollIndicator= {false}
-        renderItem={({ item }) => {
-            return (
-                <View style={styles.ViewStyle}>
-                    <Text>{item.name}</Text>
-                    <Text style={styles.listName}>{item.email}</Text>
-                    <Text>{item.country}</Text>
-                </View>
-            )
-        }} style={styles.mainViewStyle} />
+            showsHorizontalScrollIndicator={false}
+            renderItem={({ item }) => {
+                return (
+                    <View style={styles.ViewStyle}>
+                        <Text>{item.name}</Text>
+                        <Text style={styles.listName}>{item.email}</Text>
+                        <Text>{item.country}</Text>
+                    </View>
+                )
+            }} style={styles.mainViewStyle} />
     )
 }
 
@@ -66,11 +66,11 @@ const styles = StyleSheet.create({
     ViewStyle: {
         padding: 9,
         backgroundColor: "red",
-        margin:3,
+        margin: 3,
         borderColor: "blue",
         borderRadius: 10
     },
-    mainViewStyle:{
+    mainViewStyle: {
         padding: 10
     }
 })

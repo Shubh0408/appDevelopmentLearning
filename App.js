@@ -3,15 +3,20 @@ import { StyleSheet, Text, View } from "react-native"
 import Mainpage from './src/Screens/Mainpage'
 import Tasks from './src/Screens/Tasks'
 import Images from './src/Screens/images'
+import OurButton from './src/Screens/OurButton'
+import CardDetails from './src/Components/CardDetails'
+import NetlixCard from './src/Components/NetlixCard'
 
 const App = () => {
   return (
     <View style={styles.viewStyle}>
-      {/* <Text >Hello .....</Text>
-      <Mainpage /> */}
-      <Tasks />
+      {/* <Text >Hello .....</Text> */}
+      {/* <Mainpage /> */}
+      {/* <Tasks /> */}
       <Mainpage />
-      <Images />
+      {/* <Images /> */}
+      <NetlixCard />
+      {/* <OurButton /> */}
     </View>
   )
 }

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "learning",
-    "slug": "learning",
+    "name": "App developement",
+    "slug": "App developement",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
