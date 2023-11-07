@@ -6,6 +6,7 @@ import Images from './src/Screens/images'
 import OurButton from './src/Screens/OurButton'
 import CardDetails from './src/Components/CardDetails'
 import NetlixCard from './src/Components/NetlixCard'
+import Loader from './src/Components/Loader'
 
 const App = () => {
   return (
@@ -13,16 +14,17 @@ const App = () => {
       {/* <Text >Hello .....</Text> */}
       {/* <Mainpage /> */}
       {/* <Tasks /> */}
-      <Mainpage />
+      {/* <Mainpage /> */}
       {/* <Images /> */}
-      <NetlixCard />
+      {/* <NetlixCard /> */}
       {/* <OurButton /> */}
+      <Loader />
     </View>
   )
 }
 const styles = StyleSheet.create({
   viewStyle:{
-    marginTop: "20%",
+    // marginTop: "20%",
     // marginLeft: "25%",
   }
 })
