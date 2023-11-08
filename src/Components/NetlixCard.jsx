@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
     posterText: {
         textAlign: "justify",
         padding: 10,
-        fontFamily: "CormorantGaramond_300Light"
 
     },
     posterButton: {},

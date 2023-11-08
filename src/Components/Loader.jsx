@@ -5,7 +5,8 @@ const Loader = () => {
     return (
         <View style={styles.mainpage}>
             <View>
-                <View style={styles.LogoDiv}><Image style={styles.Loader} source={require("../../assets/GEMlogo.png")} /></View>
+                {/* <View style={styles.LogoDiv}><Image style={styles.Loader} source={require("../../assets/GEMlogo.png")} /></View> */}
+                <View style={styles.LogoDiv}></View>
                 <Text style={styles.GEM} >Gem</Text>
                 <Text style={styles.EXPERIENCE} >Experience</Text>
             </View>

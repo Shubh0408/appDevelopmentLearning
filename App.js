@@ -7,6 +7,9 @@ import OurButton from './src/Screens/OurButton'
 import CardDetails from './src/Components/CardDetails'
 import NetlixCard from './src/Components/NetlixCard'
 import Loader from './src/Components/Loader'
+import Counter from './src/Screens/Counter'
+import GenerateColor from './src/Screens/GenerateColor'
+import ApiCall from './src/Screens/ApiCall'
 
 const App = () => {
   return (
@@ -18,13 +21,16 @@ const App = () => {
       {/* <Images /> */}
       {/* <NetlixCard /> */}
       {/* <OurButton /> */}
-      <Loader />
+      {/* <Loader /> */}
+      {/* <Counter /> */}
+      {/* <GenerateColor /> */}
+      <ApiCall />
     </View>
   )
 }
 const styles = StyleSheet.create({
   viewStyle:{
-    // marginTop: "20%",
+    marginTop: "20%",
     // marginLeft: "25%",
   }
 })

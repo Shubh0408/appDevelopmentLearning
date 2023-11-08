@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlatList, StyleSheet, Text, View } from "react-native"
+import { FlatList, ScrollView, StyleSheet, Text, View } from "react-native"
 
 const Mainpage = () => {
     const jsonData = [
@@ -40,7 +40,23 @@ const Mainpage = () => {
         }
     ]
     return (
-        <FlatList data={jsonData}
+        <ScrollView>
+            <FlatList data={jsonData}
+            keyExtractor={(key) => {
+                return key.index;
+            }}
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            renderItem={({ item }) => {
+                return (
+                    <View style={styles.ViewStyle}>
+                        <Text>{item.name}</Text>
+                        <Text style={styles.listName}>{item.email}</Text>
+                        <Text>{item.country}</Text>
+                    </View>
+                )
+            }} style={styles.mainViewStyle} />
+            <FlatList data={jsonData}
             keyExtractor={(key) => {
                 return key.index;
 
@@ -56,6 +72,39 @@ const Mainpage = () => {
                     </View>
                 )
             }} style={styles.mainViewStyle} />
+            <FlatList data={jsonData}
+            keyExtractor={(key) => {
+                return key.index;
+
+            }}
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            renderItem={({ item }) => {
+                return (
+                    <View style={styles.ViewStyle}>
+                        <Text>{item.name}</Text>
+                        <Text style={styles.listName}>{item.email}</Text>
+                        <Text>{item.country}</Text>
+                    </View>
+                )
+            }} style={styles.mainViewStyle} />
+            <FlatList data={jsonData}
+            keyExtractor={(key) => {
+                return key.index;
+
+            }}
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            renderItem={({ item }) => {
+                return (
+                    <View style={styles.ViewStyle}>
+                        <Text>{item.name}</Text>
+                        <Text style={styles.listName}>{item.email}</Text>
+                        <Text>{item.country}</Text>
+                    </View>
+                )
+            }} style={styles.mainViewStyle} />
+        </ScrollView>
     )
 }
 
@@ -64,6 +113,8 @@ const styles = StyleSheet.create({
         color: "blue"
     },
     ViewStyle: {
+        height: 200,
+        width: 200,
         padding: 9,
         backgroundColor: "red",
         margin: 3,
