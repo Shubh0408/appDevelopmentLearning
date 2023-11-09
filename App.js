@@ -10,6 +10,7 @@ import Loader from './src/Components/Loader'
 import Counter from './src/Screens/Counter'
 import GenerateColor from './src/Screens/GenerateColor'
 import ApiCall from './src/Screens/ApiCall'
+import ContactUs from './src/Screens/ContactUs'
 
 const App = () => {
   return (
@@ -24,13 +25,14 @@ const App = () => {
       {/* <Loader /> */}
       {/* <Counter /> */}
       {/* <GenerateColor /> */}
-      <ApiCall />
+      {/* <ApiCall /> */}
+      <ContactUs/>
     </View>
   )
 }
 const styles = StyleSheet.create({
   viewStyle:{
-    marginTop: "20%",
+    // marginTop: "20%",
     // marginLeft: "25%",
   }
 })
